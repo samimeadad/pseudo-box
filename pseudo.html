@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class & Pseudo Element</title>
+    <style>
+        h1:hover {
+            color: crimson;
+            background-color: yellow;
+            font-weight: thin;
+        }
+
+        .middle-person:focus {
+            color: blue;
+            font-weight: bold;
+        }
+
+        a {
+            display: block;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:link {
+            color: blue
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: orange;
+        }
+
+        li:first-child {
+            color: darkolivegreen;
+            font-weight: bold;
+        }
+
+        li:last-child {
+            background-color: blueviolet;
+        }
+
+        li:nth-child(2n-1) {
+            background-color: yellow
+        }
+
+        li:nth-child(2n) {
+            background-color: gray;
+        }
+
+        h3::before {
+            content: 'Hello ';
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h3::after {
+            content: ' Gelo';
+            font-size: 10px;
+        }
+
+        h3::first-letter {
+            font-size: 50px;
+            color: blue;
+            font-weight: bold;
+            background-color: coral;
+        }
+
+        .special::first-line {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Normal Heading. Point it with your mouse pointer</h1>
+    <input type="text">
+    <input type="text" class="middle-person">
+    <input type="text">
+    <a href="https://www.google.com/">Go to Google</a>
+    <a href="https://web.programming-hero.com/">Go to Programming-Hero</a>
+    <a href="https://www.webdesignerdepot.com/2021/04/20-best-new-websites-april-2021/">New Website Link</a>
+
+    <h3 class="special">Mid-Sized Header - 1. <br>This is our second line.</h3>
+    <h3>Mid-Sized Header - 2. <br>This is our second line.</h3>
+    <h3 class="special">Mid-Sized Header - 3. <br>This is our second line.</h3>
+    <h3>Mid-Sized Header - 4 <br>This is our second line.</h3>
+    <h3 class="special">Mid-Sized Header - 5. <br>This is our second line.</h3>
+    <h3>Mid-Sized Header - 6, <br>This is our second line.</h3>
+    <ul>
+        <li>Polau</li>
+        <li>Roast</li>
+        <li>Korma</li>
+        <li>Beef Bhuna</li>
+        <li>Salad</li>
+        <li>Borhani</li>
+        <li>Burger</li>
+        <li>Pizza</li>
+        <li>Chowmin</li>
+        <li>Pasta</li>
+        <li>Fried Chicken</li>
+        <li>Sharma</li>
+        <li>French Fries</li>
+    </ul>
+</body>
+
+</html>
